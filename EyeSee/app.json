@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "EyeSee",
+    "slug": "eyesee",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eyesee.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "EyeSee needs camera access to scan your eye for IOP measurement."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.eyesee.app",
+      "permissions": ["android.permission.CAMERA"],
+      "usesCleartextTraffic": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "EyeSee needs camera access to scan your eye for IOP measurement."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
